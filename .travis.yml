@@ -1,0 +1,16 @@
+language: python
+
+python:
+    - "2.7"
+cache: pip
+install:
+  - pip install selenium
+
+addons:
+  browserstack:
+    username: "ashwingonsalves2"
+    access_key:
+      secure: "eMbsVL5p5ExuLQK5Nkd0tLjjnScStulszfFA2NGiJ4GcuIcfTV/Fo6EGdsy0G2B4SvamzcEPV7jYJ63mUCHFBelw10YRvZZyVMp2qrw9fvjcYLri3lCD0ikqN5N9vSz9HL2jsNZVGgtJpubFcz53s2iYTEq7o75oli0oIGkpcn1FqRQci2IZ2B8tpEs6fw9Jw7miIVL5sPYKj0qc8rXzp7HZqVOVv+PftFxYYrMBTUfx1bpKQhvowuRt6Cr4PLPRhv6mCjQymu+UnyibP2AfbxYfPxftYocBaJvrtJV4C8HRG7RP76DBnIZbgQrtvb7jT2lsAdgYwlmIapId0egg0PU6omugQs/iVyqVsasGc3nXQh+b3jZo4394WHpNv9LtaDGo3fLnkDr9Mx7s1KaCv+X60FxbUKKBLoS4Efr6fCyuAsflU/PpYpQGgkopHcyppP68Jb1AHQ3N/QKAuPC4NFZLDNoJXTu+t3+9uZp6K5V4ZfH+PZW/yMtcsP+24t12wUe0ZdCpaqeJR6s6ihQCsOKx6uGIHy6lCpbBrq1KsErwINIqd8qISqrDPbvEY/8ctYiT8N30d3cNZX0YOrSzgCgjX1gbi3xHUczTCDHQan92sMbWCuF/wiqq/oRdVFtr/OLnblPbjL/UM3+x9odCZThRmamFpKjM7Qel9q1OizA="
+
+script:
+  - python test.py
